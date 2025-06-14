@@ -8,7 +8,8 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
+    /* Increased base font size from 62.5% */
 }
 
 body {
@@ -19,19 +20,26 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url("../assets/background.png");
+    background-size: 100%;
+    /* Make background less zoomed in */
+    background-position: center;
 }
 
 .container {
-    width: 60%;
-    max-width: 820px;
+    width: 75%;
+    /* Increased from 60% */
+    max-width: 1000px;
+    /* Increased from 820px */
     display: grid;
-    padding: 2rem;
-    gap: 2rem;
+    padding: 3rem;
+    /* Increased from 2rem */
+    gap: 2.5rem;
+    /* Increased from 2rem */
     grid-template:
-		"card_1 card_2" 1fr
-		"card_3 card_3" 1fr
-		"card_4 card_4" 1fr
-		/ 1fr 1fr;
+        "card_1 card_2" 1fr
+        "card_3 card_3" 1fr
+        "card_4 card_4" 1fr
+        / 1fr 1fr;
 }
 
 .card_1 {
@@ -43,10 +51,13 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+
+    /* Increased gap */
     p {
-        width:50%;
-        font-size: 2rem;
+        width: 50%;
+        font-size: 2.6rem;
+        /* Increased from 2rem */
         font-weight: 800;
         color: #f2e9e4;
     }
@@ -78,7 +89,8 @@ body {
 }
 
 #txt {
-    font-size: 6rem;
+    font-size: 8rem;
+    /* Increased from 6rem */
     color: #f2e9e4;
     font-weight: 600;
 }
@@ -86,19 +98,23 @@ body {
 .secondsContainer {
     position: absolute;
     display: flex;
-    bottom: -20px;
-    right:-20px;
+    bottom: -25px;
+    right: -25px;
     background-color: #f2e9e4;
-    width: 50px;
-    height: 50px;
-    border-radius: 1rem;
+    width: 65px;
+    /* Increased from 50px */
+    height: 65px;
+    /* Increased from 50px */
+    border-radius: 1.2rem;
+    /* Slightly increased radius */
     align-items: center;
     justify-content: center;
     box-shadow: 1px 5px 30px #0b0b0e64;
 }
 
 #seconds {
-    font-size: 3rem;
+    font-size: 3.8rem;
+    /* Increased from 3rem */
     color: #4a4e69;
     font-weight: 600;
 }
@@ -117,20 +133,24 @@ body {
 
 input {
     width: 100%;
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 2.5rem;
+    /* Increased padding */
+    border-radius: 1.2rem;
+    /* Slightly increased radius */
     border: none;
     background-color: #4a4e69;
     color: #f2e9e4;
     outline: none;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    /* Increased from 2rem */
 }
 
 .iconSearch {
     position: absolute;
     top: 25%;
     right: 3%;
-    font-size: 3rem;
+    font-size: 3.8rem;
+    /* Increased from 3rem */
     color: #f2e9e4;
 }
 
@@ -139,26 +159,33 @@ input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
+    /* Increased from 2rem */
 }
 
 .link {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    /* Increased from 10rem */
+    height: 13rem;
+    /* Increased from 10rem */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #767b9145;
     backdrop-filter: blur(9.3px);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    /* Increased from 1rem */
     text-decoration: none;
     color: #f2e9e4;
+    padding: 0.5rem;
+    /* Added padding */
 }
 
 .link:nth-child(1):hover {
     box-shadow: 0rem 0rem 4rem #CD201F;
     transition: all ease-in-out 0.2s;
+
     .icon {
         color: #CD201F;
         transition: all ease-in-out 0.5s;
@@ -168,15 +195,17 @@ input {
 .link:nth-child(2):hover {
     box-shadow: 0rem 0rem 4rem #1DB954;
     transition: all ease-in-out 0.2s;
+
     .icon {
         color: #1DB954;
         transition: all ease-in-out 0.5s;
     }
 }
- 
+
 .link:nth-child(3):hover {
     box-shadow: 0rem 0rem 4rem #FF5700;
     transition: all ease-in-out 0.2s;
+
     .icon {
         color: #FF5700;
         transition: all ease-in-out 0.5s;
@@ -184,23 +213,33 @@ input {
 }
 
 .link:nth-child(4):hover {
-    box-shadow: 0rem 0rem 4rem #0e76a8 ;
+    box-shadow: 0rem 0rem 4rem #0e76a8;
     transition: all ease-in-out 0.2s;
+
     .icon {
-        color: #0e76a8 ;
+        color: #0e76a8;
         transition: all ease-in-out 0.5s;
     }
 }
 
 .link:nth-child(5):hover {
-    box-shadow: 0rem 0rem 4rem #f2e9e4 ;
+    box-shadow: 0rem 0rem 4rem #f2e9e4;
     transition: all ease-in-out 0.2s;
+
     .icon {
-        color: #24292e ;
+        color: #24292e;
         transition: all ease-in-out 0.5s;
     }
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 50px;
+    /* Increased from 40px */
+}
+
+/* Adding styles for the link text */
+.link p {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
 }
