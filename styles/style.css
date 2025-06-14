@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url("../assets/background.png");
-    background-size: 100%;
+    background-size: 120%;
     /* Make background less zoomed in */
     background-position: center;
 }
